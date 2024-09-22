@@ -1,0 +1,33 @@
+name: flutter_code
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  table_calendar: ^3.0.7
+  http: ^0.13.4
+  path_provider: ^2.0.14
+  provider: ^6.0.5
+  flutter_colorpicker: ^1.0.3  # 添加颜色选择器依赖
+  file_picker: ^5.0.1  # 文件选择器依赖
+
+  # 其他可能需要的依赖
+  shared_preferences: ^2.0.13  # 如果需要存储设置或用户数据
+  intl: ^0.17.0  # 如果需要国际化支持
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/prime_offer.png  # 确保图片已放置在该路径
+    - assets/images/fish_tank.gif   # 如果 FishTank 页面需要其他图片资源，建议添加到这里
